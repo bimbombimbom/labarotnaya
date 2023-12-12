@@ -1,0 +1,102 @@
+('9:30 - 11:05', '', '', '');
+('11:20 - 12:55', '', '', '');
+('13:10 - 14:45', '', '', '');
+('15:25 - 17:00', '', '', '');
+('17:15 - 18:50', '', '', '');
+
+
+
+CREATE TABLE pn (id SERIAL PRIMARY KEY,
+				  subject varchar NOT NULL, 
+				  room_numb varchar NOT NULL,
+				  start_time varchar NOT NULL,
+				  teacher varchar NOT NULL);
+INSERT INTO pn(start_time, subject, teacher, room_numb) 
+VALUES
+('9:30 - 11:05', 'Основы российской государственности', 'Хуснутдинова Л.Г.', 'Н-318');
+('11:20 - 12:55', 'Физическая культура и спорт', 'Хайрулин Р.С.', 'Н-С/Зал');
+('13:10 - 14:45', 'Философия', 'Шаколюкова В.Д.', 'Н-316')
+('15:25 - 17:00', '', '', '');
+('17:15 - 18:50', '', '', '');
+
+
+
+CREATE TABLE vt (id SERIAL PRIMARY KEY,
+				  subject varchar NOT NULL, 
+				  room_numb varchar NOT NULL,
+				  start_time varchar NOT NULL,
+				  teacher varchar NOT NULL);
+INSERT INTO vt(start_time, subject, teacher, room_numb)
+VALUES
+('9:30 - 11:05', '', '', '');
+('11:20 - 12:55', 'Линейная алгебра и аналитическая геометрия', 'Александров Ю.Л.', 'Н-504');
+('13:10 - 14:45', 'Физика', 'Иноземцева Н.Г.', 'Н-226');
+('15:25 - 17:00', 'Основы росссийской государственности', 'Хуснутдинова Л.Г.', 'Н-535');
+('17:15 - 18:50', 'Высшая математика', 'Александров Ю.Л.', 'Н-308');
+
+
+
+CREATE TABLE cp (id SERIAL PRIMARY KEY,
+				  subject varchar NOT NULL, 
+				  room_numb varchar NOT NULL,
+				  start_time varchar NOT NULL,
+				  teacher varchar NOT NULL);
+INSERT INTO cp(start_time, subject, teacher, room_numb)
+VALUES
+('9:30 - 11:05', 'Введение в информационные технологии(лаб.)', 'Зайцев А.И.', 'А-УЛК-702');
+('11:20 - 12:55', 'Введение в информационные технологии(лаб.)', 'Зайцев А.И.', 'А-УЛК-702');
+('13:10 - 14:45', '', '', '');
+('15:25 - 17:00', '', '', '');
+('17:15 - 18:50', '', '', '');
+
+
+
+CREATE TABLE cht (id SERIAL PRIMARY KEY,
+				  subject varchar NOT NULL, 
+				  room_numb varchar NOT NULL,
+				  start_time varchar NOT NULL,
+				  teacher varchar NOT NULL);
+INSERT INTO cht(start_time, subject, teacher, room_numb)
+VALUES
+('9:30 - 11:05', '', '', '');
+('11:20 - 12:55', 'Философия', 'Шаколюкова В.Д.', 'H-535');
+('13:10 - 14:45', 'Физическая культура и спорт', 'Хайрулин Р.С.', 'Н-С/Зал');
+('15:25 - 17:00', '', '', '');
+('17:15 - 18:50', 'Русский язык', 'Бочарова Т.И.', 'Н-504а');
+
+
+
+CREATE TABLE pt (id SERIAL PRIMARY KEY,
+				  subject varchar NOT NULL, 
+				  room_numb varchar NOT NULL,
+				  start_time varchar NOT NULL,
+				  teacher varchar NOT NULL);
+INSERT INTO pt(start_time, subject, teacher, room_numb)
+VALUES
+('9:30 - 11:05', '', '', '');
+('11:20 - 12:55', 'Введение в профессию', '', 'Конгресс-центр');
+('13:10 - 14:45', 'Введение в профессию', '', 'Конгресс-центр');
+('15:25 - 17:00', '', '', '');
+('17:15 - 18:50', '', '', '');
+
+
+
+CREATE TABLE sb (id SERIAL PRIMARY KEY,
+				  subject varchar NOT NULL, 
+				  room_numb varchar NOT NULL,
+				  start_time varchar NOT NULL,
+				  teacher varchar NOT NULL);
+INSERT INTO sb(start_time, subject, teacher, room_numb)
+VALUES
+('9:30 - 11:05', 'Иностранный язык', 'Денеко М.В.', 'А-422');
+('11:20 - 12:55', 'Введение в информационные технологии', 'Казиева Т.В.', 'А-502');
+('13:10 - 14:45', '', '', '');
+('15:25 - 17:00', '', '', '');
+('17:15 - 18:50', '', '', '');
+
+SELECT * FROM public.pn
+SELECT * FROM public.vt
+SELECT * FROM public.cp
+SELECT * FROM public.cht
+SELECT * FROM public.pt
+SELECT * FROM public.sb
